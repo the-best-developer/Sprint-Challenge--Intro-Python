@@ -39,7 +39,6 @@ def cityreader(cities=[]):
         lats = float(data[3])
         lons = float(data[4])
 
-        print(data[3])
         cities.append(City(data[0], lats, lons))
     csv_data.close()
     return cities
